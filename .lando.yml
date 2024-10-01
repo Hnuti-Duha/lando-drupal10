@@ -1,7 +1,7 @@
 name: dev-drupal10
 recipe: drupal10
 config:
-  database: mariadb:10.4.27-debian-11-r20
+  database: mysql:8.0
 services:
   appserver:
     webroot: drupal/web
