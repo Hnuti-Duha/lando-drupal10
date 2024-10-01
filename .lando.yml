@@ -10,8 +10,8 @@ services:
     # config:
     #   php: scripts/lando-customizations/php.ini
     run_as_root:
-      - ln -snf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
-      - echo "Europe/Istanbul" > /etc/timezone
+      - ln -snf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+      - echo "Europe/Berlin" > /etc/timezone
     build_as_root:
       - echo "updating apt" && apt update -y
       - echo "installing upload progress" && pecl install uploadprogress 2>&1 >/dev/null
